@@ -1,6 +1,4 @@
-# PixDotDot（拼豆豆）BLE 协议逆向笔记
-
-> 逆向自 PixDotDot 原版 App（`BaseSend.kt` / `BleManager`），仅用于学习研究。
+# 拼豆板 BLE 通信协议笔记
 
 ## 1. 服务与特征
 

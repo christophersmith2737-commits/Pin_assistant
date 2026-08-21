@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 发送页：完整版 BLE 连接 + 发送（移植 PixDotDot 逻辑）
+ * 发送页：完整版 BLE 连接 + 发送
  * - 扫描过滤 PDD_ 设备，显示格式名（含尺寸）
  * - 连接握手：解析硬件信息自动识别板尺寸
  * - 15 秒连接超时 + 自动重连（记住 MAC）
@@ -508,7 +508,7 @@ public class SendActivity extends Activity {
         }
     }
 
-    /** ledType → 板尺寸（PixDotDot: 0=32, 1=52, 2=78, 3=104, 4=29） */
+    /** ledType → 板尺寸（0=32, 1=52, 2=78, 3=104, 4=29） */
     private int sizeForLedType(int type) {
         switch (type) {
             case 0: return 32;
@@ -520,7 +520,7 @@ public class SendActivity extends Activity {
         }
     }
 
-    // ==================== 发送（PixDotDot 完整流程） ====================
+    // ==================== 发送（完整流程） ====================
 
     private void startSend() {
         if (gridRgb == null || gridRgb.length == 0) {

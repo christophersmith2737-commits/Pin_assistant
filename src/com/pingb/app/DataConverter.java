@@ -7,7 +7,7 @@ import org.json.JSONObject;
  * 识别数据转换器
  * 把 PinGB WebView 传来的图纸数据转换为：
  * 1. MARD 色号数组（用于显示/校验）
- * 2. RGB 像素字节流（用于 BLE 发送，模拟 PixDotDot 的 sendImageData 输入）
+ * 2. RGB 像素字节流（用于 BLE 发送）
  */
 public final class DataConverter {
 

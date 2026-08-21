@@ -1,7 +1,7 @@
 package com.pingb.app.ble;
 
 /**
- * CRC32 校验（与 PixDotDot App 一致的实现）
+ * CRC32 校验
  * 用于 BLE 发送帧的整包校验。
  */
 public final class Crc32 {
@@ -18,7 +18,7 @@ public final class Crc32 {
         }
     }
 
-    /** 计算 byte[] 的 CRC32（返回无符号 int，与 PixDotDot 一致） */
+    /** 计算 byte[] 的 CRC32（返回无符号 int） */
     public static int crc32(byte[] data, int offset, int length) {
         int crc = 0xFFFFFFFF;
         for (int i = offset; i < offset + length; i++) {

@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         root.addView(title);
 
         TextView subtitle = new TextView(this);
-        subtitle.setText("PinGB 识别 + PixDotDot 蓝牙协议");
+        subtitle.setText("PinGB 识别 + BLE 蓝牙发送");
         subtitle.setTextSize(14);
         subtitle.setPadding(0, 0, 0, 32);
         root.addView(subtitle);

@@ -25,14 +25,14 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * BLE 连接管理（参考 PixDotDot 的 MyBleManager）
+ * BLE 连接管理
  * 负责：扫描、连接、GATT 服务发现、特征写入。
  */
 public class BleManager {
 
     private static final String TAG = "BleManager";
 
-    // 拼豆板 GATT UUID（从 PixDotDot MyBleManager 还原）
+    // 拼豆板 GATT UUID
     public static final UUID SERVICE_UUID = UUID.fromString("0000ae00-0000-1000-8000-00805f9b34fb");
     public static final UUID NOTIFY_UUID = UUID.fromString("0000ae02-0000-1000-8000-00805f9b34fb");
 
@@ -488,7 +488,7 @@ public class BleManager {
         return gatt != null && writeChar != null;
     }
 
-    // ==================== 发送（PixDotDot 帧协议） ====================
+    // ==================== 发送（帧协议） ====================
 
     public interface SendListener {
         void onProgress(int sent, int total);
